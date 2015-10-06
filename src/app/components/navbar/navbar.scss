@@ -1,0 +1,48 @@
+body {
+  transition: .5s ease-out;
+}
+
+.active-menu {
+  outline: none;
+  transform: translateX(-30vw);
+}
+
+#my-navbar{
+  background: transparent;
+  .container-fluid {
+  	
+  	.row {
+  		padding-top: 20px;
+  		padding-bottom: 20px;
+
+      .icon-menu {
+
+        i {
+          transition: .2s linear;
+          font-size: 2em;
+          color: #fff;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+       
+      }
+
+  		div {
+  			text-align: center;
+  		}
+  	}
+
+  }
+}
+
+@media (max-width: 786px) {
+  .active-menu {
+    transform: translateX(-60vw);
+  }
+}
+
+
+
+
